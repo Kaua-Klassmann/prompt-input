@@ -1,0 +1,15 @@
+[package]
+name = "prompt-input"
+version = "0.1.0"
+authors = ["Kauã Klassmann <kaua.klassmann661@gmail.com>"]
+edition = "2021"
+description = "A simple and lightweight library for user input prompts in Rust, designed to make input handling straightforward."
+license-file = "LICENSE"
+repository = "https://github.com/Kaua-Klassmann/prompt-input"
+documentation = "https://docs.rs/prompt-input"
+readme = "README.md"
+keywords = ["input", "user", "prompt", "cli", "user-input"]
+categories = ["text-processing", "rust-patterns", "development-tools"]
+
+[package.metadata.docs.rs]
+all-features = true
