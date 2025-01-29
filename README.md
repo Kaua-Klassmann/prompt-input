@@ -15,7 +15,7 @@ cargo add prompt-input
 Here's a quick example of how to use `prompt-input`:
 
 ```rust
-use prompt_input::StringPromptable;
+use prompt_input::prelude::*;
 
 fn main() {
     let name: String = String::prompt("Enter your name: ");
