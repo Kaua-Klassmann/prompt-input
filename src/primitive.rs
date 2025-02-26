@@ -34,3 +34,11 @@ impl PromptableWithOption for i32 {
         input.parse().ok()
     }
 }
+
+impl PromptableWithOption for i64 {
+    fn prompt(output: &str) -> Option<Self> {
+        let input = String::prompt(output);
+
+        input.parse().ok()
+    }
+}

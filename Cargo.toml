@@ -1,6 +1,6 @@
 [package]
 name = "prompt-input"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Kauã Klassmann <kaua.klassmann661@gmail.com>"]
 edition = "2021"
 description = "A simple and lightweight library for user input prompts in Rust, designed to make input handling straightforward."
