@@ -66,3 +66,11 @@ impl PromptableWithOption for i128 {
         input.parse().ok()
     }
 }
+
+impl PromptableWithOption for u8 {
+    fn prompt(output: &str) -> Option<Self> {
+        let input = String::prompt(output);
+
+        input.parse().ok()
+    }
+}

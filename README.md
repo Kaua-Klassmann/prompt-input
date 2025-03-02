@@ -18,9 +18,14 @@ Here's a quick example of how to use `prompt-input`:
 use prompt_input::prelude::*;
 
 fn main() {
-    let name: String = String::prompt("Enter your name: ");
+    let name = String::prompt("Enter your name: ");
+    let age = u8::prompt("Enter your age: ");
 
-    println!("Hello, {}!", name);
+    if age.is_none() {
+        println!("Hello {}!", name);
+    } else {
+        println!("Hello {}! You are {} years old.", name, age.unwrap());
+    }
 }
 ```
 
