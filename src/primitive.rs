@@ -90,3 +90,11 @@ impl PromptableWithOption for u32 {
         input.parse().ok()
     }
 }
+
+impl PromptableWithOption for u64 {
+    fn prompt(output: &str) -> Option<Self> {
+        let input = String::prompt(output);
+
+        input.parse().ok()
+    }
+}
