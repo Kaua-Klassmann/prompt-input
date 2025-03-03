@@ -106,3 +106,11 @@ impl PromptableWithOption for u128 {
         input.parse().ok()
     }
 }
+
+impl PromptableWithOption for usize {
+    fn prompt(output: &str) -> Option<Self> {
+        let input = String::prompt(output);
+
+        input.parse().ok()
+    }
+}
