@@ -33,7 +33,6 @@ fn main() {
 
 - Reduces boilerplate code for handling user input.
 - Encourages clean and readable CLI application code.
-- Easy to extend for other types in future versions.
 
 ## Contributing
 
