@@ -28,9 +28,7 @@ impl Promptable for String {
             .read_line(&mut input)
             .expect("Failed to read the prompt");
 
-        input.pop();
-
-        input
+        input.trim().to_string()
     }
 }
 
